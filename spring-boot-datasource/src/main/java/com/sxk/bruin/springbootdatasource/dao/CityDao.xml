@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sxk.bruin.springbootdatasource.dao.CityDao">
+    <resultMap id="BaseResultMap" type="com.sxk.bruin.springbootdatasource.po.City">
+        <id column="cid" jdbcType="VARCHAR" property="cid"/>
+        <result column="cname" jdbcType="VARCHAR" property="cname"/>
+        <result column="pid" jdbcType="NUMERIC" property="pid"/>
+        <result column="pname" jdbcType="NUMERIC" property="pname"/>
+    </resultMap>
+    <sql id="BaseColumns">
+	  cid, cname, pid,pname
+  </sql>
+    <select id="selectAll" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumns"/>
+        from city
+    </select>
+</mapper>

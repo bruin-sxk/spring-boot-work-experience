@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sxk.bruin.springbootdatasource.dao.MenusDao">
+    <resultMap id="BaseResultMap" type="com.sxk.bruin.springbootdatasource.po.Menus">
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="deleted" jdbcType="VARCHAR" property="deleted"/>
+        <result column="icon" jdbcType="VARCHAR" property="icon"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="priority" jdbcType="VARCHAR" property="priority"/>
+        <result column="target" jdbcType="VARCHAR" property="target"/>
+        <result column="url" jdbcType="VARCHAR" property="url"/>
+    </resultMap>
+    <sql id="BaseColumns">
+	  id,deleted,icon,name,priority,target,url
+  </sql>
+    <select id="selectAll" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumns"/>
+        from menus
+    </select>
+</mapper>
