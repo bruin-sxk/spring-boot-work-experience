@@ -20,7 +20,8 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 public class SpringBootDatasourceApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootDatasourceApplication.class, args);
+		SpringApplication application = new SpringApplication(SpringBootDatasourceApplication.class);
+		application.run(args);
 	}
 
 	@Override
