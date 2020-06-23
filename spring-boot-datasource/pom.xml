@@ -88,7 +88,7 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
-                    <encoding>GBK</encoding>
+                    <!--<encoding>GBK</encoding>-->
                 </configuration>
             </plugin>
             <plugin>
