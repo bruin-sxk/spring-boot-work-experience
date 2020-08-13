@@ -15,4 +15,7 @@
         <include refid="BaseColumns"/>
         from city
     </select>
+    <insert id="insert">
+        insert into city(cid, cname) values(#{cid},#{name})
+    </insert>
 </mapper>

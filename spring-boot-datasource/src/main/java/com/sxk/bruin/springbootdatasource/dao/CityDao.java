@@ -8,4 +8,6 @@ public interface CityDao {
 
 	List<City> selectAll();
 
+	int insert(City city);
+
 }
