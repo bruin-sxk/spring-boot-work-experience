@@ -1,0 +1,21 @@
+[{
+  "id": "credit-project-manage",
+  "order": 0,
+  "predicates": [{
+    "args": {
+      "pattern": "/credit-project-manage/**"
+    },
+    "name": "Path"
+  }],
+  "uri": "lb://credit-project-manage"
+},{
+  "id": "credit-customer-manage",
+  "order": 0,
+  "predicates": [{
+    "args": {
+      "pattern": "/credit-customer-manage/**"
+    },
+    "name": "Path"
+  }],
+  "uri": "lb://credit-customer-manage"
+}]
