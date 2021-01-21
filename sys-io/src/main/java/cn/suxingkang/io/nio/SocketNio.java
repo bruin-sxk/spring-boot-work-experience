@@ -40,6 +40,7 @@ public class SocketNio {
 				int read = client.read(buffer);
 
 				if (read > 0) {
+					// 使得 buffer 变得可读
 					buffer.flip();
 
 					byte[] bytes = new byte[buffer.limit()];
