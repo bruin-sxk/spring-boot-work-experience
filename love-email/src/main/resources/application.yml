@@ -1,0 +1,13 @@
+spring:
+  mail:
+    password: nncjnuhdgpqibfae
+    username: 1054656114@qq.com
+    host: smtp.qq.com
+    properties:
+      mail.stmp.auth: ture
+      mail.display.sendmail: suxingkang's love email
+    port: 587
+server:
+  port: 9898
+she:
+  mail: 15735184305@163.com
